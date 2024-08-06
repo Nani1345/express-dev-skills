@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit the skill</h1>
+    <form action="/skills/<%= skill._id %>?_method=PUT" method="POST">
+        <input  value='<%= skill.name %>' name='name' placeholder='Name'type="text"><br>
+        <input  value='<%= skill.level %>' name='level' placeholder='Level'type='text'><br>
+        <input  value='<%= skill.yearsOfExperience %>' name='yearsOfExperience' placeholder='Years Of Experience'type="number"><br>
+        <button type="submit">Save your skills</button>
+    </form>
+</body>
+</html>
